@@ -5,25 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Fitness Club</title>
+    <!-- this meta tage is used for seo -->
+    <meta name="description"
+        content="Welcome to Prime Fitness Club, your ultimate destination for fitness and wellness. Join us to achieve your health goals with state-of-the-art facilities and expert guidance.">
+    <!-- these two link is used to link the bootstrap css and js file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <!-- this link is used to link the css file -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-    </style>
+    <!-- this link is used to link the font awesome icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- first i create navbar -->
+    <!-- this is home page of prime fitness club -->
     <div id="home">
+        <!-- nav bar is starting from here -->
         <div class="nav">
             <div class="navbar">
                 <img src="assest/image/1.png" alt="Prime Fitness Club Logo" class="logo">
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <!-- these are nav links  -->
+                    <li><a class="hav" href="#home">Home</a></li>
+                    <li><a class="hav" href="#aboutus">About Us</a></li>
+                    <li><a class="hav" href="#gallery">Gallery</a></li>
+                    <!-- these are dropdown links -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -41,17 +53,74 @@
                             <li><a class="dropdown-item" href="#list">List of Equipment with its discription</a></li>
                         </ul>
                     </li>
-                    <li><a href="#enquiryform">Enquiry Form</a></li>
-                    <li class="color"><a href="#faqs">FAQ's</a></li>
+                    <!-- dropdown links end here -->
+                    <li><a class="color" href="#enquiryform">Enquiry Form</a></li>
+                    <li><a class="color" href="#faqs">FAQ's</a></li>
                 </ul>
+                <!-- nav links end here -->
             </div>
+            <!-- and the navbar end here -->
         </div>
+        <!-- this is the hero section of the page -->
+        <!-- in this hero section page the website first heading and first paragraph is written and a button is also given -->
         <div class="hero">
             <h1 class="first-heading">Welcome to Prime Fitness Club</h1>
             <p class="first-para">Your journey to fitness starts here!</p>
             <button type="submit" class="btn">Join Now</button>
         </div>
+        <!-- hero section end here -->
     </div>
+
+
+    <!-- this is Faqs section -->
+    <div id="faqs">
+        <div class="main-faqs">
+            <!-- faqs main heading and paragraph -->
+            <h2 class="faqs-heading">Frequently Asked Questions</h2>
+            <!-- faqs question and answer  -->
+            <p class="faq-para">Find answers to common questions about our facilities, memberships, and services.</p>
+            <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>What is your Operating hours?</p>
+                <div class="answer">
+                    Our facility is open Monday to Friday from 6:00 AM to 10:00 PM, and Saturday to Sunday from 8:00 AM
+                    to 8:00 PM.
+                </div>
+                <!-- faqs question and answer end here and following are same code -->
+            </div>
+             <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>Do you offer Personal traning?</p>
+                <div class="answer">
+                    Yes, we have a team of certified personal trainers available for one-on-one sessions. You can book a consultation at the front desk or through our website.
+                </div>
+            </div>
+             <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>Can i try class before joining?</p>
+                <div class="answer">
+                    Absolutely! We offer a complimentary trial class for new visitors. Please check our group exercise schedule and sign up at the front desk.
+                </div>
+            </div>
+             <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>What is included in the Premium Pass membership?</p>
+                <div class="answer">
+                    The Premium Pass includes full access to the gym floor, unlimited group exercise classes, and full access to our swimming pool facilities.
+                </div>
+            </div>
+             <div class="bar">
+                <p class="question"><i class="fa fa-plus"></i>Do you have changing rooms and lockers? </p>
+                <div class="answer">
+                    Yes, we provide clean and spacious changing rooms with secure lockers for your belongings. Please bring your own lock or purchase one at the front desk.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faqs end here -->
+
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>

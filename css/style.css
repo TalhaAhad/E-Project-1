@@ -1,22 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* this is a universal selector */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* this is a body selector */
 body{
     background-color: #f0f0f0;
+    overflow-x: hidden;
 }
-
-/* .nav{
-    background-color: black;
-} */
-
+/* this is a header selector and navbar */
 .navbar{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
-
+/* navlinks  */
 .nav-links{
     display: flex;
     align-items: center;
@@ -26,36 +25,34 @@ body{
     list-style: none;
 }
 
+/* in navlinks anchor tag */
 .nav-links li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-
+/* dropdown selector */
 .dropdown-menu{
-    width: 600px;
     height: 400px;
-    background-color: red;
-    color: black;
 }
-
+/* doropdown item  */
 .dropdown-item{
     margin-top: 20px;
-    border-right: 1px solid lightslategray;
 }
 
+/* this is a home page selector */
 #home{
     width: 100%;
     height: 100vh;
     background-image: url("/assest/image/Red\ &\ Black\ Fitness\ YouTube\ Thumbnail.png");
 }
-
+/* this is the main logo  */
 .logo{
     width: 100px;
     margin: 10px;
     border-radius: 50px;
 }
-
+/* first heading  */
 .first-heading{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -65,6 +62,8 @@ body{
     padding-left: 20px;
 }
 
+
+/* first paragraph selector */
 .first-para{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -75,7 +74,7 @@ body{
     border-left: 4px solid red;
     padding-left: 20px;
 }
-
+/* hero class selector */
 .hero{
     width: 550px;
     height: 500px;
@@ -83,7 +82,7 @@ body{
     margin-top: 20px;
      
 }
-
+ /* join us button selector */
 .btn{
     background-color: black;
     color: white;
@@ -94,10 +93,71 @@ body{
     font-family: "Bebas Neue", sans-serif ;
     font-style: normal;
     font-size: 20px;
+    animation: shake 1.5s infinite;
 }
-
+@keyframes shake {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  80% { transform: translateY(8px); }
+  100% { transform: translateY(0); }
+}
+/* join us btn hover effect */
 .btn:hover{
     background-color: red;
     color: black;
     cursor: pointer;
+    text-decoration: underline;
 }
+
+#faqs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+.main-faqs{
+    width: 100%;
+    padding: 20px;
+}
+
+.faqs-heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+}
+
+.faq-para{
+    font-family: "Playfair Display", serif;
+}
+
+.bar{
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgb(219, 218, 218), -2px -2px rgb(223, 220, 220);
+    padding: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: whitesmoke;
+
+}
+
+.question{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+.answer{
+    display: none;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow:inset 2px 2px 5px rgb(223, 220, 220), -2px -2px rgb(219, 218, 218);
+    font-family: "Playfair Display", serif;
+}
+
+
+
