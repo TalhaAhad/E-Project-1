@@ -1,59 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* this is a universal selector */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* this is a body selector */
-body{
+body {
     background-color: #f0f0f0;
     overflow-x: hidden;
 }
+
 /* this is a header selector and navbar */
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
 }
+
 /* navlinks  */
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     gap: 30px;
     padding: 20px;
     list-style: none;
+     font-family: "Playfair Display", serif;
+}
+
+.nav-links li:hover{
+    background-color: black;
+    color: red;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.nav-links li a:hover{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    padding: 6px;
 }
 
 /* in navlinks anchor tag */
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+
 /* dropdown selector */
-.dropdown-menu{
+.dropdown-menu {
     height: 400px;
 }
+
 /* doropdown item  */
-.dropdown-item{
+.dropdown-item {
     margin-top: 20px;
 }
 
+.color{
+    color: white;
+}
+
 /* this is a home page selector */
-#home{
+#home {
     width: 100%;
     height: 100vh;
     background-image: url("/assest/image/Red\ &\ Black\ Fitness\ YouTube\ Thumbnail.png");
 }
+
 /* this is the main logo  */
-.logo{
+.logo {
     width: 100px;
     margin: 10px;
     border-radius: 50px;
 }
+
 /* first heading  */
-.first-heading{
+.first-heading {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -64,7 +91,7 @@ body{
 
 
 /* first paragraph selector */
-.first-para{
+.first-para {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -74,42 +101,61 @@ body{
     border-left: 4px solid red;
     padding-left: 20px;
 }
+
 /* hero class selector */
-.hero{
+.hero {
     width: 550px;
     height: 500px;
     margin-left: 130px;
     margin-top: 20px;
-     
+
 }
- /* join us button selector */
-.btn{
+
+/* join us button selector */
+.btn {
     background-color: black;
     color: white;
     padding: 20px 40px;
     border-radius: 30px;
     font-weight: 400;
     margin: 20px;
-    font-family: "Bebas Neue", sans-serif ;
+    font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-size: 20px;
     animation: shake 1.5s infinite;
 }
+
+/* key farem for btn  */
 @keyframes shake {
-  0% { transform: translateY(0); }
-  40% { transform: translateY(-8px); }
-  80% { transform: translateY(8px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-8px);
+    }
+
+    80% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
+
 /* join us btn hover effect */
-.btn:hover{
+.btn:hover {
     background-color: red;
     color: black;
     cursor: pointer;
     text-decoration: underline;
 }
 
-#faqs{
+/* faq accordion is start from here */
+
+
+#faqs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,21 +167,21 @@ body{
 
 }
 
-.main-faqs{
+.main-faqs {
     width: 100%;
     padding: 20px;
 }
 
-.faqs-heading{
+.faqs-heading {
     font-family: "Bebas Neue", sans-serif;
     font-size: 42px;
 }
 
-.faq-para{
+.faq-para {
     font-family: "Playfair Display", serif;
 }
 
-.bar{
+.bar {
     border-radius: 12px;
     box-shadow: 2px 2px 5px rgb(219, 218, 218), -2px -2px rgb(223, 220, 220);
     padding: 20px;
@@ -145,19 +191,149 @@ body{
 
 }
 
-.question{
+.question {
     font-size: 16px;
     font-weight: bold;
     font-family: "Playfair Display", serif;
 }
 
-.answer{
+.answer {
     display: none;
     padding: 20px;
     border-radius: 12px;
-    box-shadow:inset 2px 2px 5px rgb(223, 220, 220), -2px -2px rgb(219, 218, 218);
+    box-shadow: inset 2px 2px 5px rgb(223, 220, 220), -2px -2px rgb(219, 218, 218);
     font-family: "Playfair Display", serif;
 }
 
+/* site map started from here  */
 
+.sitemap {
+    /* background-color: #111; */
+    /* color: white; */
+    padding: 20px;
+    background-image: url("/assest/image/Purple\ Abstract\ Graphic\ Design\ LinkedIn\ Article\ Cover\ Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
 
+.site-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    left: 150px;
+    top: 13px;
+}
+
+.site-para {
+    font-family: "Playfair Display", serif;
+    position: relative;
+    left: 150px;
+    color: white;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.main-sectionlink {
+    list-style: none;
+}
+
+.section-heading {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.main-sectionlink li {
+    padding-top: 10px;
+}
+
+.main-sectionlink li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+
+.main-sectionlink li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.activities {
+    list-style: none;
+}
+
+.activities li {
+    padding-top: 10px;
+}
+
+.activities li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+
+.activities li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.information {
+    list-style: none;
+    position: relative;
+    bottom: 32px;
+}
+
+.information li {
+    padding-top: 10px;
+}
+
+.information li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+}
+
+.information li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.details {
+    width: 700px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    color: white;
+}
+
+.personal-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.icons {
+    position: relative;
+    bottom: 10px;
+}
+.footer-para{
+    width: 100%;
+    height: 40px;
+    background-color: #26053c;
+    text-align: center;
+    color: white;
+}
