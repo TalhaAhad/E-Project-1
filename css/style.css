@@ -7,14 +7,14 @@ body{
     background-color: #f0f0f0;
 }
 
-.nav{
+/* .nav{
     background-color: black;
-}
+} */
 
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .nav-links{
@@ -23,13 +23,81 @@ body{
     justify-content:center ;
     gap: 30px;
     padding: 20px;
+    list-style: none;
 }
 
 .nav-links li a{
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    color: black;
+}
+
+.dropdown-item{
+    margin-top: 20px;
+    border-right: 1px solid lightslategray;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assest/image/Red\ &\ Black\ Fitness\ YouTube\ Thumbnail.png");
+}
+
+.logo{
+    width: 100px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.first-heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    border-left: 4px solid red;
+    padding-left: 20px;
+}
+
+.first-para{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-left: 4px solid red;
+    padding-left: 20px;
 }
 
 .hero{
-    
+    width: 550px;
+    height: 500px;
+    margin-left: 130px;
+    margin-top: 20px;
+     
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-weight: 400;
+    margin: 20px;
+    font-family: "Bebas Neue", sans-serif ;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: red;
+    color: black;
+    cursor: pointer;
 }
