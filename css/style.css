@@ -112,7 +112,7 @@ body {
 }
 
 /* join us button selector */
-.btn {
+.join-btn {
     background-color: black;
     color: white;
     padding: 20px 40px;
@@ -145,7 +145,7 @@ body {
 }
 
 /* join us btn hover effect */
-.btn:hover {
+.join-btn:hover {
     background-color: red;
     color: black;
     cursor: pointer;
@@ -336,4 +336,21 @@ body {
     background-color: #26053c;
     text-align: center;
     color: white;
+}
+.gallery-header {
+    background-image: url("/E-Project-1/assest/image/gallery-bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
+}
+.gallery-container{
+    margin-top: 100px;
+}
+.galleryimg{
+    width: 410px;
+    border-radius: 15px;
 }
