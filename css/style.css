@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+/* @media screen (max-width: 950px) {
+    .navbar{
+        display: none
+    }
+} */
+
+
 /* this is a universal selector */
 * {
     margin: 0;
@@ -29,19 +37,17 @@ body {
     font-family: "Playfair Display", serif;
 }
 
-.nav-links li:hover {
-    background-color: black;
-    color: red;
-    width: 60px;
-    height: 30px;
-    border-radius: 10px;
+.nav-links li:hover{
+    text-decoration: underline;
 }
 
-.nav-links li a:hover {
-    color: red;
-    text-align: center;
+.color:hover{
     text-decoration: underline;
-    padding: 6px;
+    color: red;
+}
+
+.nav-links li a:hover{
+    color: white;
 }
 
 /* in navlinks anchor tag */
@@ -127,6 +133,13 @@ body {
     animation: shake 1.5s infinite;
 }
 
+/* join us btn hover effect */
+.join-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    animation: change 1.5s infinite;
+}
+
 /* key farem for btn  */
 @keyframes shake {
     0% {
@@ -145,6 +158,18 @@ body {
         transform: translateY(0);
     }
 }
+
+@keyframes change{
+    0%{
+        background-color: black;
+        color: red;
+    }
+    100%{
+        background-color: red;
+        color: black;
+    }
+}
+
 
 /* join us btn hover effect */
 .join-btn:hover {
@@ -209,15 +234,11 @@ body {
 
 /* site map started from here  */
 
-.sitemap {
-    /* background-color: #111; */
-    /* color: white; */
-    padding: 20px;
+.sitemap-1 {
+    /*   */
     background-image: url("/assest/image/Purple\ Abstract\ Graphic\ Design\ LinkedIn\ Article\ Cover\ Image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 60vh;
 }
 
 .site-heading {
@@ -341,6 +362,8 @@ body {
     color: white;
 }
 
+/* Kashif gallery  */
+
 .gallery-header {
     background-image: url("/assest/image/gallery-bg-img.jpg");
     background-size: cover;
@@ -361,3 +384,4 @@ body {
     width: 350px;
     border-radius: 8px;
 }
+
