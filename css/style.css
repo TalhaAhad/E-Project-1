@@ -66,12 +66,12 @@ body {
 }
 
 /* this is a home page selector */
-#home {
-    width: 100%;
-    height: 100vh;
+.home-1 {
+    /* width: 100%;
+    height: 100vh; */
     background-image: url("/assest/image/Red\ &\ Black\ Fitness\ YouTube\ Thumbnail.png");
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* this is the main logo  */
@@ -359,5 +359,5 @@ body {
 
 .galleryimg {
     width: 350px;
-    border-radius: 15px;
+    border-radius: 8px;
 }
