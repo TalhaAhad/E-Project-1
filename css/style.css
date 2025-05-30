@@ -37,16 +37,16 @@ body {
     font-family: "Playfair Display", serif;
 }
 
-.nav-links li:hover{
+.nav-links li:hover {
     text-decoration: underline;
 }
 
-.color:hover{
+.color:hover {
     text-decoration: underline;
     color: red;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: white;
 }
 
@@ -159,12 +159,13 @@ body {
     }
 }
 
-@keyframes change{
-    0%{
+@keyframes change {
+    0% {
         background-color: black;
         color: red;
     }
-    100%{
+
+    100% {
         background-color: red;
         color: black;
     }
@@ -378,10 +379,20 @@ body {
 
 .gallery-container {
     margin-top: 50px;
+    background-image: url("/assest/image/gallery-bg-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .galleryimg {
     width: 350px;
     border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
+.galleryimg:hover {
+    border: 1px solid #ff0000;
+    transform: scale(1.05);
+    transition: 0.3s;
+}

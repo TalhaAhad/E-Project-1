@@ -19,7 +19,14 @@
     <!-- this link is used to link the font awesome icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- JQuery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- link for light box -->
+    <link rel="stylesheet" href="/css-lightbox/lightbox.css">
+    <script src="/js-lightbox/lightbox.js"></script>
 </head>
 
 <body>
@@ -82,39 +89,104 @@
     
     <!-- Gallery images container-->
 
-    <div class="gallery-container container bg-info p-3 rounded-4">
+    <div class="gallery-container container bg-warning p-3 rounded-4">
         <!-- images row 1 -->
         <div class="row d-flex">
-            <div class="col"><img class="galleryimg" src="./assest/image/Cycling-img-1.avif" alt="Cycling Image 1"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Cycling-img-2.jpg" alt="Cycling Image 2"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Cycling-img-3.jpg" alt="Cycling Image 3"></div>
+            <div class="col">
+                <a href="/assest/image/Cycling-img-1.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Cycling-img-1.avif" alt="Cycling Image 1">
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="/assest/image/Cycling-img-2.jpg" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Cycling-img-2.jpg" alt="Cycling Image 2">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Cycling-img-3.jpg" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Cycling-img-3.jpg" alt="Cycling Image 3">
+                </a>
+            </div>
         </div>
+
         <!-- images row 2 -->
         <div class="row d-flex py-3">
-            <div class="col"><img class="galleryimg" src="/assest/image/Swimming-Img-1.avif" alt="Swimming Image 1"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Swimming-Img-2.avif" alt="Swimming Image 2"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Swimming-Img-3.avif" alt="Swimming Image 3"></div>
+            <div class="col">
+                <a href="/assest/image/Swimming-Img-1.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Swimming-Img-1.avif" alt="Swimming Image 1">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Swimming-Img-2.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Swimming-Img-2.avif" alt="Swimming Image 2">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Swimming-Img-3.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Swimming-Img-3.avif" alt="Swimming Image 3">
+                </a>
+            </div>
         </div>
+    
         <!-- images row 3 -->
-         <div class="row d-flex py-3">
-            <div class="col"><img class="galleryimg" src="/assest/image/Sports-Img-2.avif" alt="Sports Image 1"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Sports-Img-1.avif" alt="Sports Image 2"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Sports-Img-3.avif" alt="Sports Image 3"></div>
+        <div class="row d-flex py-3">
+            <div class="col">
+                <a href="/assest/image/Sports-Img-1.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Sports-Img-1.avif" alt="Sports Image 1">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Sports-Img-2.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Sports-Img-2.avif" alt="Sports Image 2">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Sports-Img-3.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Sports-Img-3.avif" alt="Sports Image 3">
+                </a>
+            </div>
         </div>
+        
         <!-- images row 4 -->
         <div class="row d-flex py-3">
-            <div class="col"><img class="galleryimg" src="/assest/image/GroupExercise-Img-1.avif" alt="Group Exercise Image 1"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/GroupExercise-Img-2.avif" alt="Group Exercise Image 2"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/GroupExercise-Img-3.avif" alt="Group Exercise Image 3"></div>
+            <div class="col">
+                <a href="/assest/image/GroupExercise-Img-1.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/GroupExercise-Img-1.avif" alt="Group Exercise Image 1">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/GroupExercise-Img-2.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/GroupExercise-Img-2.avif" alt="Group Exercise Image 2">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/GroupExercise-Img-3.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/GroupExercise-Img-3.avif" alt="Group Exercise Image 3">
+                </a>
+            </div>
         </div>
         <!-- images row 5 -->
         <div class="row d-flex py-3">
-            <div class="col"><img class="galleryimg" src="/assest/image/Salon-Img-1.avif" alt="Salon Image 1"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Salon-Img-2.avif" alt="Salon Image 2"></div>
-            <div class="col"><img class="galleryimg" src="/assest/image/Salon-Img-3.avif" alt="Salon Image 3"></div>
+            <div class="col">
+                <a href="/assest/image/Salon-Img-1.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Salon-Img-1.avif" alt="Salon Image 1">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Salon-Img-2.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Salon-Img-2.avif" alt="Salon Image 2">
+                </a>
+            </div>
+            <div class="col">
+                <a href="/assest/image/Salon-Img-3.avif" data-lightbox="roadtrip">
+                    <img class="galleryimg" src="/assest/image/Salon-Img-3.avif" alt="Salon Image 3">
+                </a>
+            </div>
         </div>
 
     </div>
+    
 </div>
 
     <!-- this is Faqs section -->
