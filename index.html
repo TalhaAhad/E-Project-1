@@ -24,6 +24,8 @@
     <!-- JQuery link -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- font awesome cdn  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- link for light box -->
     <link rel="stylesheet" href="/css-lightbox/lightbox.css">
     <script src="/js-lightbox/lightbox.js"></script>
@@ -33,11 +35,13 @@
     <!-- first i create navbar -->
     <!-- this is home page of prime fitness club -->
     <div class=" home-1" id="home">
+
         <!-- nav bar is starting from here -->
         <div class="nav">
-            <img src="assest/image/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="home-icon">
-            <div class="navbar">
+            <div class="logo-menu">
                 <img src="assest/image/1.png" alt="Prime Fitness Club Logo" class="logo">
+            </div>
+            <div class="navbar" id="navbarLinks">
                 <ul class="nav-links">
                     <!-- these are nav links  -->
                     <li><a class="hav" href="#home">Home</a></li>
@@ -66,24 +70,36 @@
                 <!-- nav links end here -->
             </div>
             <!-- and the navbar end here -->
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <!-- this is the hero section of the page -->
+        <!-- this is the slider of the page -->
         <!-- in this hero section page the website first heading and first paragraph is written and a button is also given -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <h1 class="first-heading ">Welcome to Prime Fitness Club</h1>
-                    <p class="first-para">Your journey to fitness starts here!</p>
+                    <p class="first-para">Your journey to fitness starts here!. At Prime Fitness, we believe that true
+                        wellness is more than just a workout – it's a complete lifestyle transformation. Located in
+                        [Your Location, e.g., the heart of the city / a convenient neighborhood], we are dedicated to .
+                    </p>
                     <button type="submit" class="join-btn">Join Now</button>
                 </div>
                 <div class="carousel-item">
                     <h1 class="first-heading ">Expert Certified Trainers</h1>
-                    <p class="first-para">Our team of highly qualified and passionate personal trainers are here to guide you every step of the way. Whether you're looking for personalized workout plans, nutritional advice, or motivational support, our trainers are dedicated to helping you set realistic goals and achieve extraordinary results.</p>
+                    <p class="first-para">Our team of highly qualified and passionate personal trainers are here to
+                        guide you every step of the way. Whether you're looking for personalized workout plans,
+                        nutritional advice, or motivational support, our trainers are dedicated to helping you set
+                        realistic goals and achieve extraordinary results.</p>
                     <button type="submit" class="join-btn">Join Now</button>
                 </div>
                 <div class="carousel-item">
                     <h1 class="first-heading ">Diverse Group Fitness Classes</h1>
-                    <p class="first-para">Find your rhythm and motivation in our diverse range of group fitness classes. From high-energy HIIT and invigorating spin classes to calming yoga and dynamic Zumba, there's a class for every interest and fitness level. Our experienced instructors ensure each session is engaging, effective, and fun.</p>
+                    <p class="first-para">Find your rhythm and motivation in our diverse range of group fitness classes.
+                        From high-energy HIIT and invigorating spin classes to calming yoga and dynamic Zumba, there's a
+                        class for every interest and fitness level. Our experienced instructors ensure each session is
+                        engaging, effective, and fun.</p>
                     <button type="submit" class="join-btn">Join Now</button>
                 </div>
             </div>
