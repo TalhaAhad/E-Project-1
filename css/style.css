@@ -80,11 +80,11 @@ body {
 }
 
 /* Fix for the dropdown class */
-.dropdown {
+/* .dropdown {
     overflow-y: hidden;
     position: relative;
     display: inline-block;
-}
+} */
 
 /* doropdown item  */
 .dropdown-item {
@@ -238,6 +238,7 @@ body {
 .faqs-heading {
     font-family: "Bebas Neue", sans-serif;
     font-size: 42px;
+    overflow: hidden;
 }
 
 .faq-para {
@@ -276,8 +277,8 @@ body {
 /* site map started from here  */
 
 .sitemap-1 {
-    /*   */
-    /* height: 100vh; */
+    max-width: 100%;
+    /* he   ight: 100dvh; */
     background-image: url("/assest/image/Purple\ Abstract\ Graphic\ Design\ LinkedIn\ Article\ Cover\ Image.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,11 +287,12 @@ body {
 
 .site-heading {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 45px;
+    font-size: 4vw;
     color: white;
     position: relative;
     left: 150px;
     top: 13px;
+    overflow: hidden;
 }
 
 .site-para {
@@ -298,6 +300,7 @@ body {
     position: relative;
     left: 150px;
     color: white;
+    font-size: 1.5vw;
 }
 
 .main-section {
@@ -519,7 +522,16 @@ body {
     .faqs-heading {
         font-family: "Bebas Neue", sans-serif;
         font-size: 35px;
-}
+    }
+
+    /* Site map is started  */
+    .site-heading{
+        font-size: 6vw;
+    }
+
+    .site-para{
+        font-size: 2vw;
+    }
 }
 
 @media (max-width: 670px){
@@ -536,6 +548,69 @@ body {
     .first-para{
         font-size: 2vw;
     }
+
+    /* site map  */
+    .site-heading{
+        font-size: 6vw;
+        left: 50px;
+    }
+
+    .site-para{
+        font-size: 2vw;
+        left: 50px;
+    }
+
+    .section-heading{
+        font-size: 4vw;
+    }
+
+    .main-sectionlink li{
+        font-size: 2vw;
+    }
+
+    .activities li{
+        font-size: 2vw;
+    }
+
+    .information li{
+        font-size: 2vw;
+    }
+
+    .information{
+        top: -25px;
+    }
+
+    .details{
+        width: 500px;
+        font-size: 12px;
+        
+    }
+
+    .personal-details{
+        flex-wrap: wrap;
+    }
+
+    .details img{
+        width: 20px;
+    }
+
+    .footer-para{
+        font-size: 4vw;
+    }
+
+    /* site map  */
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 15px;
+    }
+
 }
 
 @media (max-width: 470px) {
@@ -571,6 +646,19 @@ body {
         padding: 20px 0;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    /* site map  */
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 10px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -591,6 +679,16 @@ body {
 
     .first-para{
         font-size: 4vw;
+    }
+
+    .details{
+        position: relative;
+        right: 120px;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 5px;
     }
 }
 
