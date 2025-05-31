@@ -76,13 +76,21 @@ body {
 
 /* dropdown selector */
 .dropdown-menu {
-    height: 400px;
+    height: 400px;  
+}
+
+/* Fix for the dropdown class */
+.dropdown {
+    overflow-y: hidden;
+    position: relative;
+    display: inline-block;
 }
 
 /* doropdown item  */
 .dropdown-item {
     margin-top: 20px;
     color: black;
+    
 }
 
 .dropdown-menu li a {
@@ -224,7 +232,7 @@ body {
 
 .main-faqs {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 .faqs-heading {
@@ -244,6 +252,11 @@ body {
     cursor: pointer;
     background: whitesmoke;
 
+}
+
+.question i{
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 .question {
@@ -501,6 +514,12 @@ body {
         padding: 15px 30px;
         font-size: 14px;
     }
+
+    /* Faq responsivness started  */
+    .faqs-heading {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 35px;
+}
 }
 
 @media (max-width: 670px){
