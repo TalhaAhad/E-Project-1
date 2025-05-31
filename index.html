@@ -35,6 +35,7 @@
     <div class=" home-1" id="home">
         <!-- nav bar is starting from here -->
         <div class="nav">
+            <img src="assest/image/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="" class="home-icon">
             <div class="navbar">
                 <img src="assest/image/1.png" alt="Prime Fitness Club Logo" class="logo">
                 <ul class="nav-links">
@@ -59,8 +60,8 @@
                     </li>
                     <!-- dropdown links end here -->
                     <li><a href="#enquiryform">Enquir<span class="color">y Form</span></a></li>
-                    <li><a href="#faqs"><span class="color">FAQ's</span></a></li>
-                    <li><a href="#sitemap"><span class="color">Site Map</span></a></li>
+                    <li><a href="#faqs">FAQ's</a></li>
+                    <li><a href="#sitemap">Site Map</a></li>
                 </ul>
                 <!-- nav links end here -->
             </div>
@@ -68,126 +69,159 @@
         </div>
         <!-- this is the hero section of the page -->
         <!-- in this hero section page the website first heading and first paragraph is written and a button is also given -->
-        <div class="hero">
-            <h1 class="first-heading">Welcome to Prime Fitness Club</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h1 class="first-heading ">Welcome to Prime Fitness Club</h1>
+                    <p class="first-para">Your journey to fitness starts here!</p>
+                    <button type="submit" class="join-btn">Join Now</button>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="first-heading ">Expert Certified Trainers</h1>
+                    <p class="first-para">Our team of highly qualified and passionate personal trainers are here to guide you every step of the way. Whether you're looking for personalized workout plans, nutritional advice, or motivational support, our trainers are dedicated to helping you set realistic goals and achieve extraordinary results.</p>
+                    <button type="submit" class="join-btn">Join Now</button>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="first-heading ">Diverse Group Fitness Classes</h1>
+                    <p class="first-para">Find your rhythm and motivation in our diverse range of group fitness classes. From high-energy HIIT and invigorating spin classes to calming yoga and dynamic Zumba, there's a class for every interest and fitness level. Our experienced instructors ensure each session is engaging, effective, and fun.</p>
+                    <button type="submit" class="join-btn">Join Now</button>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- <div class="hero">
+            <h1 class="first-heading ">Welcome to Prime Fitness Club</h1>
             <p class="first-para">Your journey to fitness starts here!</p>
             <button type="submit" class="join-btn">Join Now</button>
-        </div>
+        </div> -->
         <!-- hero section end here -->
     </div>
 
     <!-- Gallery - Kashif -->
     <!-- this is header of gallery -->
-<div>
-    <div class="container-fuild text-center" id="gallery">
-        <div class="gallery-header">
-            <h1 class="gallery-heading">Our Gallery</h1>
-            <p class="gallery-para">Explore our state-of-the-art facilities and vibrant community through our gallery.
-            </p>
+    <div>
+        <div class="container-fuild text-center" id="gallery">
+            <div class="gallery-header">
+                <h1 class="gallery-heading">Our Gallery</h1>
+                <p class="gallery-para">Explore our state-of-the-art facilities and vibrant community through our
+                    gallery.
+                </p>
+            </div>
         </div>
+
+        <!-- Gallery images container-->
+
+        <div class="gallery-container container bg-warning p-3 rounded-4">
+            <!-- images row 1 -->
+            <div class="row d-flex">
+                <div class="col">
+                    <a href="/assest/image/Cycling-img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Cycling-img-1.avif" alt="Cycling Image 1">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/assest/image/Cycling-img-2.jpg" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Cycling-img-2.jpg" alt="Cycling Image 2">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Cycling-img-3.jpg" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Cycling-img-3.jpg" alt="Cycling Image 3">
+                    </a>
+                </div>
+            </div>
+
+            <!-- images row 2 -->
+            <div class="row d-flex py-3">
+                <div class="col">
+                    <a href="/assest/image/Swimming-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Swimming-Img-1.avif" alt="Swimming Image 1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Swimming-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Swimming-Img-2.avif" alt="Swimming Image 2">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Swimming-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Swimming-Img-3.avif" alt="Swimming Image 3">
+                    </a>
+                </div>
+            </div>
+
+            <!-- images row 3 -->
+            <div class="row d-flex py-3">
+                <div class="col">
+                    <a href="/assest/image/Sports-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Sports-Img-1.avif" alt="Sports Image 1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Sports-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Sports-Img-2.avif" alt="Sports Image 2">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Sports-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Sports-Img-3.avif" alt="Sports Image 3">
+                    </a>
+                </div>
+            </div>
+
+            <!-- images row 4 -->
+            <div class="row d-flex py-3">
+                <div class="col">
+                    <a href="/assest/image/GroupExercise-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/GroupExercise-Img-1.avif"
+                            alt="Group Exercise Image 1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/GroupExercise-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/GroupExercise-Img-2.avif"
+                            alt="Group Exercise Image 2">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/GroupExercise-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/GroupExercise-Img-3.avif"
+                            alt="Group Exercise Image 3">
+                    </a>
+                </div>
+            </div>
+            <!-- images row 5 -->
+            <div class="row d-flex py-3">
+                <div class="col">
+                    <a href="/assest/image/Salon-Img-1.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Salon-Img-1.avif" alt="Salon Image 1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Salon-Img-2.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Salon-Img-2.avif" alt="Salon Image 2">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/assest/image/Salon-Img-3.avif" data-lightbox="roadtrip">
+                        <img class="galleryimg" src="/assest/image/Salon-Img-3.avif" alt="Salon Image 3">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    
-    <!-- Gallery images container-->
-
-    <div class="gallery-container container bg-warning p-3 rounded-4">
-        <!-- images row 1 -->
-        <div class="row d-flex">
-            <div class="col">
-                <a href="/assest/image/Cycling-img-1.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Cycling-img-1.avif" alt="Cycling Image 1">
-                </a>
-            </div>
-    
-            <div class="col">
-                <a href="/assest/image/Cycling-img-2.jpg" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Cycling-img-2.jpg" alt="Cycling Image 2">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Cycling-img-3.jpg" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Cycling-img-3.jpg" alt="Cycling Image 3">
-                </a>
-            </div>
-        </div>
-
-        <!-- images row 2 -->
-        <div class="row d-flex py-3">
-            <div class="col">
-                <a href="/assest/image/Swimming-Img-1.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Swimming-Img-1.avif" alt="Swimming Image 1">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Swimming-Img-2.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Swimming-Img-2.avif" alt="Swimming Image 2">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Swimming-Img-3.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Swimming-Img-3.avif" alt="Swimming Image 3">
-                </a>
-            </div>
-        </div>
-    
-        <!-- images row 3 -->
-        <div class="row d-flex py-3">
-            <div class="col">
-                <a href="/assest/image/Sports-Img-1.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Sports-Img-1.avif" alt="Sports Image 1">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Sports-Img-2.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Sports-Img-2.avif" alt="Sports Image 2">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Sports-Img-3.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Sports-Img-3.avif" alt="Sports Image 3">
-                </a>
-            </div>
-        </div>
-        
-        <!-- images row 4 -->
-        <div class="row d-flex py-3">
-            <div class="col">
-                <a href="/assest/image/GroupExercise-Img-1.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/GroupExercise-Img-1.avif" alt="Group Exercise Image 1">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/GroupExercise-Img-2.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/GroupExercise-Img-2.avif" alt="Group Exercise Image 2">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/GroupExercise-Img-3.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/GroupExercise-Img-3.avif" alt="Group Exercise Image 3">
-                </a>
-            </div>
-        </div>
-        <!-- images row 5 -->
-        <div class="row d-flex py-3">
-            <div class="col">
-                <a href="/assest/image/Salon-Img-1.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Salon-Img-1.avif" alt="Salon Image 1">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Salon-Img-2.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Salon-Img-2.avif" alt="Salon Image 2">
-                </a>
-            </div>
-            <div class="col">
-                <a href="/assest/image/Salon-Img-3.avif" data-lightbox="roadtrip">
-                    <img class="galleryimg" src="/assest/image/Salon-Img-3.avif" alt="Salon Image 3">
-                </a>
-            </div>
-        </div>
-
-    </div>
-    
-</div>
 
     <!-- this is Faqs section -->
     <div id="faqs">
@@ -204,28 +238,32 @@
                 </div>
                 <!-- faqs question and answer end here and following are same code -->
             </div>
-             <div class="bar">
+            <div class="bar">
                 <p class="question"><i class="fa fa-plus"></i>Do you offer Personal traning?</p>
                 <div class="answer">
-                    Yes, we have a team of certified personal trainers available for one-on-one sessions. You can book a consultation at the front desk or through our website.
+                    Yes, we have a team of certified personal trainers available for one-on-one sessions. You can book a
+                    consultation at the front desk or through our website.
                 </div>
             </div>
-             <div class="bar">
+            <div class="bar">
                 <p class="question"><i class="fa fa-plus"></i>Can i try class before joining?</p>
                 <div class="answer">
-                    Absolutely! We offer a complimentary trial class for new visitors. Please check our group exercise schedule and sign up at the front desk.
+                    Absolutely! We offer a complimentary trial class for new visitors. Please check our group exercise
+                    schedule and sign up at the front desk.
                 </div>
             </div>
-             <div class="bar">
+            <div class="bar">
                 <p class="question"><i class="fa fa-plus"></i>What is included in the Premium Pass membership?</p>
                 <div class="answer">
-                    The Premium Pass includes full access to the gym floor, unlimited group exercise classes, and full access to our swimming pool facilities.
+                    The Premium Pass includes full access to the gym floor, unlimited group exercise classes, and full
+                    access to our swimming pool facilities.
                 </div>
             </div>
-             <div class="bar">
+            <div class="bar">
                 <p class="question"><i class="fa fa-plus"></i>Do you have changing rooms and lockers? </p>
                 <div class="answer">
-                    Yes, we provide clean and spacious changing rooms with secure lockers for your belongings. Please bring your own lock or purchase one at the front desk.
+                    Yes, we provide clean and spacious changing rooms with secure lockers for your belongings. Please
+                    bring your own lock or purchase one at the front desk.
                 </div>
             </div>
         </div>
@@ -268,15 +306,18 @@
         </div>
         <div class="details">
             <div class="personal-details">
-                <img class="icons" src="assest/image/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
+                <img class="icons" src="assest/image/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
                 <p>Landhi No 2, Karachi, Pakistan</p>
             </div>
             <div class="personal-details">
-                <img class="icons" src="assest/image/call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
+                <img class="icons" src="assest/image/call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="call_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
                 <p>+92-312-123455</p>
             </div>
             <div class="personal-details">
-                <img class="icons" src="assest/image/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
+                <img class="icons" src="assest/image/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24">
                 <p>Info@primefitnessclub.com</p>
             </div>
         </div>
@@ -284,7 +325,7 @@
             <p class="footer-para">&copy; Copyright 2025 primefitnessclub.com All Rights Reserved.</p>
         </footer>
     </div>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="javascript/script.js"></script>
