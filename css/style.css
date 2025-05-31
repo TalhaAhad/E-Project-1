@@ -1,23 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-/* @media screen (max-width: 950px) {
-    .navbar{
-        display: none
+@media screen and (max-width: 1000px) {
+    .nav {
+        display: none;
     }
-} */
+
+    .first-heading {
+        position: relative;
+        top: 60px;
+        font-size: 20px;
+        right: 20px;
+    }
+
+    .first-para {
+        position: relative;
+        top: 60px;
+        font-size: 20px;
+        right: 20px;
+    }
+
+
+}
+
 
 
 /* this is a universal selector */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* this is a body selector */
 body {
     background-color: #f0f0f0;
-    overflow-x: hidden;
+    
 }
 
 /* this is a header selector and navbar */
@@ -47,24 +66,30 @@ body {
 }
 
 .nav-links li a:hover {
-    color: white;
+    color: red;
 }
 
 /* in navlinks anchor tag */
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 /* dropdown selector */
 .dropdown-menu {
     height: 400px;
+
 }
 
 /* doropdown item  */
 .dropdown-item {
     margin-top: 20px;
+    color: black;
+}
+
+.dropdown-menu li a {
+    color: black;
 }
 
 .color {
@@ -73,11 +98,12 @@ body {
 
 /* this is a home page selector */
 .home-1 {
-    /* width: 100%;
-    height: 100vh; */
-    background-image: url("/assest/image/Red\ &\ Black\ Fitness\ YouTube\ Thumbnail.png");
-    background-size: cover;
+    /* max-width: 100%; */
+    /* height: auto; */
+    background-image: url("/assest/image/Red\ White\ Modern\ Get\ Fit\ Stay\ Strong\ Youtube\ Banner.jpg");
+    background-size: max(1000px, 100vw);
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* this is the main logo  */
@@ -95,7 +121,10 @@ body {
     font-size: 80px;
     border-left: 4px solid red;
     padding-left: 20px;
+    color: white;
 }
+
+
 
 
 /* first paragraph selector */
@@ -108,6 +137,7 @@ body {
     margin-bottom: 40px;
     border-left: 4px solid red;
     padding-left: 20px;
+    color: white;
 }
 
 /* hero class selector */
