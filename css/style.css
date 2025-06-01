@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-@media screen and (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .nav {
         display: none;
     }
-
-    .home-icon{
+    .home-1, .home-icon{
         display: block;
     }
+} */
 
-
-}
 
 
 
@@ -35,10 +33,14 @@ body {
     align-items: center;
 }
 
-.home-icon{
-    width: 50px;
-    /* float: right; */
+/* Hamburger Menu (Hidden by default on large screens) */
+.hamburger-menu {
     display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: red;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 /* navlinks  */
@@ -74,14 +76,21 @@ body {
 
 /* dropdown selector */
 .dropdown-menu {
-    height: 400px;
-
+    height: 400px;  
 }
+
+/* Fix for the dropdown class */
+/* .dropdown {
+    overflow-y: hidden;
+    position: relative;
+    display: inline-block;
+} */
 
 /* doropdown item  */
 .dropdown-item {
     margin-top: 20px;
     color: black;
+    
 }
 
 .dropdown-menu li a {
@@ -94,12 +103,13 @@ body {
 
 /* this is a home page selector */
 .home-1 {
-    /* max-width: 100%; */
-    height: 100vh;
+    max-width: 100%;
+    height: auto;
     background-image: url("/assest/image/Red\ White\ Modern\ Get\ Fit\ Stay\ Strong\ Youtube\ Banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    overflow: hidden;
 }
 
 /* this is the main logo  */
@@ -114,7 +124,7 @@ body {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 80px;
+    font-size: 5vw;
     padding-left: 20px;
     color: white;
     overflow: hidden;
@@ -125,15 +135,17 @@ body {
     /* margin-left: 120px; */
     position: relative;
     left: 120px;
+    display: flex;
+    align-items: center;
 }
 
 
 /* first paragraph selector */
 .first-para {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 1.5vw;
     margin-top: 20px;
     margin-bottom: 40px;
     padding-left: 20px;
@@ -220,12 +232,13 @@ body {
 
 .main-faqs {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 .faqs-heading {
     font-family: "Bebas Neue", sans-serif;
     font-size: 42px;
+    overflow: hidden;
 }
 
 .faq-para {
@@ -240,6 +253,11 @@ body {
     cursor: pointer;
     background: whitesmoke;
 
+}
+
+.question i{
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 .question {
@@ -259,19 +277,22 @@ body {
 /* site map started from here  */
 
 .sitemap-1 {
-    /*   */
+    max-width: 100%;
+    /* he   ight: 100dvh; */
     background-image: url("/assest/image/Purple\ Abstract\ Graphic\ Design\ LinkedIn\ Article\ Cover\ Image.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .site-heading {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 45px;
+    font-size: 4vw;
     color: white;
     position: relative;
     left: 150px;
     top: 13px;
+    overflow: hidden;
 }
 
 .site-para {
@@ -279,6 +300,7 @@ body {
     position: relative;
     left: 150px;
     color: white;
+    font-size: 1.5vw;
 }
 
 .main-section {
@@ -425,6 +447,7 @@ body {
     transition: 0.3s;
 }
 
+<<<<<<< HEAD
 .membership-card{
     border: 1px solid blue;
     border-radius: 8px;
@@ -458,3 +481,251 @@ body {
     transition: 0.50s;
     
 }
+=======
+
+
+
+
+
+
+
+
+@media (max-width: 860px) {
+    .logo-menu {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .hamburger-menu {
+        display: block; 
+        position: absolute; 
+        right: 1.5rem; 
+        top: 0.8rem;
+    }
+
+    .navbar {
+        width: 40%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: black; 
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+
+    .navbar.active { /* Class added by JavaScript when hamburger is clicked */
+        display: flex; /* Show navigation links when active */
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        padding: 5px 0;
+        width: 100%; /* Ensure full width for clickable area */
+    }
+
+    .navbar-links ul li a {
+        font-size: 1.1rem;
+        display: block; /* Make the whole area clickable */
+    }
+
+    .carousel-inner{
+        /* width: 400px; */
+        left: 60px;
+        flex-wrap: wrap;
+    }
+
+    .first-heading{
+        font-size: 6vw;
+    }
+
+    .first-para{
+        font-size: 1.5vw;
+    }
+
+    .join-btn {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    /* Faq responsivness started  */
+    .faqs-heading {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 35px;
+    }
+
+    /* Site map is started  */
+    .site-heading{
+        font-size: 6vw;
+    }
+
+    .site-para{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 670px){
+    .carousel-inner{
+        width: 400px;
+        left: 40px;
+        flex-wrap: wrap;
+    }
+
+    .first-heading{
+        font-size: 8vw;
+    }
+
+    .first-para{
+        font-size: 2vw;
+    }
+
+    /* site map  */
+    .site-heading{
+        font-size: 6vw;
+        left: 50px;
+    }
+
+    .site-para{
+        font-size: 2vw;
+        left: 50px;
+    }
+
+    .section-heading{
+        font-size: 4vw;
+    }
+
+    .main-sectionlink li{
+        font-size: 2vw;
+    }
+
+    .activities li{
+        font-size: 2vw;
+    }
+
+    .information li{
+        font-size: 2vw;
+    }
+
+    .information{
+        top: -25px;
+    }
+
+    .details{
+        width: 500px;
+        font-size: 12px;
+        
+    }
+
+    .personal-details{
+        flex-wrap: wrap;
+    }
+
+    .details img{
+        width: 20px;
+    }
+
+    .footer-para{
+        font-size: 4vw;
+    }
+
+    /* site map  */
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .logo{
+        width: 50px;
+    }
+
+    .hamburger-menu {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .carousel-inner{
+        width: 300px;
+        left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .first-heading{
+        font-size: 8vw;
+    }
+
+    .first-para{
+        font-size: 2vw;
+    }
+
+    .navbar {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: black; 
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* site map  */
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .join-btn {
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+    .carousel-inner{
+        width: 200px;
+        left: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .first-heading{
+        font-size: 8vw;
+    }
+
+    .first-para{
+        font-size: 4vw;
+    }
+
+    .details{
+        position: relative;
+        right: 120px;
+    }
+
+    /* faqs  */
+    .bar{
+        padding: 5px;
+    }
+}
+
+
+>>>>>>> 120e5b1421a59150755088d7ebfabe99461f831f
