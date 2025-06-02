@@ -461,7 +461,8 @@ body {
 }
 
 .perks{
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    text-align: center;
 }
 
 .popular-badge {
@@ -486,5 +487,14 @@ body {
 }
 
 .membership-btn {
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .galleryimg {
+    position: relative;
+    left: 60px;
+    margin-bottom: 20px;
+  }
 }
