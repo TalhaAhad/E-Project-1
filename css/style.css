@@ -435,6 +435,17 @@ body {
     transition: 0.3s;
 }
 
+.membership-header{
+    background-image: url("/assest/image/Membership-head-bg-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding-top: 80px;
+    font-size: 25px;
+    color: white;
+}
+
 .membership-card{
     border: 1px solid blue;
     border-radius: 8px;
@@ -443,6 +454,25 @@ body {
     height: 380px;
 }
 
+.membership-card-bg-1{
+    background-image: url("/assest/image/membership-card-bg-img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 200px; */
+}
+.membership-card-bg-2{
+    background-image: url("/assest/image/membership-card-bg-img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.membership-card-bg-3{
+    background-image: url("/assest/image/membership-card-bg-img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .membership-card:hover {
     /* transform: scale(1.05); */
     transform: translateY(-5px);
@@ -464,6 +494,7 @@ body {
     /* position: relative;
     bottom: 14px;
     left: 60px; */
+    
 
 }
 
