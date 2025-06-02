@@ -12,7 +12,7 @@
 /* this is a body selector */
 body {
     background-color: #f0f0f0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /* this is a header selector and navbar */
