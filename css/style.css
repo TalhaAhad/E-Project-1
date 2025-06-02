@@ -460,6 +460,10 @@ body {
     transform: translateY(-5px);
 }
 
+.perks{
+    margin-left: 100px;
+}
+
 .popular-badge {
     background-color: orange;
     color: black;
@@ -479,4 +483,8 @@ body {
     color: white;
     transition: 0.50s;
     
+}
+
+.membership-btn {
+    margin-left: 100px;
 }
