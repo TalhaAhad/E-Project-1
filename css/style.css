@@ -64,7 +64,7 @@ body {
 
 /* dropdown selector */
 .dropdown-menu {
-    height: 400px;  
+    height: 400px;
 }
 
 /* Fix for the dropdown class */
@@ -78,7 +78,7 @@ body {
 .dropdown-item {
     margin-top: 20px;
     color: black;
-    
+
 }
 
 .dropdown-menu li a {
@@ -118,7 +118,7 @@ body {
     overflow: hidden;
 }
 
-.carousel-inner{
+.carousel-inner {
     width: 600px;
     /* margin-left: 120px; */
     position: relative;
@@ -243,7 +243,7 @@ body {
 
 }
 
-.question i{
+.question i {
     padding-right: 10px;
     padding-top: 5px;
 }
@@ -327,7 +327,7 @@ body {
 
 .activities {
     list-style: none;
-    
+
 }
 
 .activities li {
@@ -435,7 +435,7 @@ body {
     transition: 0.3s;
 }
 
-.membership-header{
+.membership-header {
     background-image: url("/assest/image/Membership-head-bg-img.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -446,7 +446,7 @@ body {
     color: white;
 }
 
-.membership-card{
+.membership-card {
     border: 1px solid blue;
     border-radius: 8px;
     box-shadow: 0 1px 3px black;
@@ -454,33 +454,43 @@ body {
     height: 380px;
 }
 
-.membership-card-bg-1{
+.membership-name:hover {
+    transition: transform 0.3s ease;
+    /* transform: translateX(5px); */
+    transform: scale(1.05);
+}
+
+.membership-card-bg-1 {
     background-image: url("/assest/image/membership-card-bg-img1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* height: 200px; */
 }
-.membership-card-bg-2{
+
+.membership-card-bg-2 {
     background-image: url("/assest/image/membership-card-bg-img2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.membership-card-bg-3{
+
+.membership-card-bg-3 {
     background-image: url("/assest/image/membership-card-bg-img3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .membership-card:hover {
     /* transform: scale(1.05); */
     transform: translateY(-5px);
 }
 
-.perks{
-    /* margin-left: 100px; */
-    text-align: center;
+.perks:hover {
+    transform: translateY(-5px);
+    transition: 0.7s;
+    color: red;
+    text-shadow: 2px 2px black;
 }
 
 .popular-badge {
@@ -494,7 +504,7 @@ body {
     /* position: relative;
     bottom: 14px;
     left: 60px; */
-    
+
 
 }
 
@@ -502,7 +512,7 @@ body {
     background-color: darkorange;
     color: white;
     transition: 0.50s;
-    
+
 }
 
 .membership-btn {
@@ -511,9 +521,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .galleryimg {
-    position: relative;
-    left: 60px;
-    margin-bottom: 20px;
-  }
+    .galleryimg {
+        position: relative;
+        left: 60px;
+        margin-bottom: 20px;
+    }
 }
